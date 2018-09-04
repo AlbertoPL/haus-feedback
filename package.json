@@ -34,7 +34,7 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "npm run server",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p && ./node_modules/.bin/sequelize db:migrate --env production"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
