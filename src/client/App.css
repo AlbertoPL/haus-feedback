@@ -1,0 +1,13 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1008px;
+  height: 100vh;
+}
+
+.App h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
